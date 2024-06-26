@@ -1,0 +1,98 @@
+.page-header {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+
+  .left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    .title {
+      padding: 2px 2px 2px 0;
+      font-size: 16px;
+      line-height: 18px;
+      border: 0;
+      outline: 0;
+      border-radius: 4px;
+
+      &:focus {
+        padding-left: 2px;
+        margin-left: -2px;
+        outline: 1px solid #40a9ff;
+      }
+
+      &.disabled {
+        background-color: unset;
+        outline: 0;
+      }
+    }
+
+    .desc {
+      font-size: 12px;
+      line-height: 12px;
+      color: #959595;
+      transform: scale(0.9);
+      transform-origin: left bottom;
+    }
+
+    .logo {
+      display: flex;
+      width: 36px;
+      margin-right: 10px;
+
+      path {
+        fill: #40a9ff;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+
+    .divider {
+      width: 1px;
+      height: 20px;
+      margin-left: 16px;
+      margin-right: 10px;
+      background-color: #eee;
+    }
+  }
+
+  .people {
+    position: relative;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    margin-right: -5px;
+    line-height: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      box-sizing: border-box;
+    }
+
+    .dot {
+      position: absolute;
+      bottom: 3px;
+      right: 3px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: gray;
+    }
+  }
+}
